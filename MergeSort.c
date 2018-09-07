@@ -47,7 +47,7 @@ int* MergeSort(int *A,int l,int r)
 {
 	int mid,length=(r-l+1);
 	int *left; int *right;
-	int *p=malloc(sizeof(int));
+	//int *p=malloc(sizeof(int));
 	int llength=(int)ceil(length/2.0);
 	int rlength=length-llength;
 	//printf("llength=%d rlength=%d\n",llength,rlength);
