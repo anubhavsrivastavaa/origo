@@ -53,8 +53,8 @@ int* MergeSort(int *A,int l,int r)
 	//printf("llength=%d rlength=%d\n",llength,rlength);
 	if(l==r)
 	{
-		*p=A[l];
-		return p;
+		//*p=A[l];
+		return &A[l];
 	}
 	else
 	{
