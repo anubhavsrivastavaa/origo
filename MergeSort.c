@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-int* Merge(int *left,int *right,int llength,int rlength,int mid)
+int* Merge(int *left,int *right,int llength,int rlength)
 {
 	int *B=malloc((llength+rlength)*sizeof(int));
 	int i=0,j=0,k=0;
@@ -61,7 +61,7 @@ int* MergeSort(int *A,int l,int r)
 		mid=(l+r)/2;
 		left=MergeSort(A,l,mid);
 		right=MergeSort(A,mid+1,r);
-		return Merge(left,right,llength,rlength,mid);
+		return Merge(left,right,llength,rlength);
 	}
 }
 
