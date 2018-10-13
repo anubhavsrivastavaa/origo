@@ -1,4 +1,4 @@
 # origo
 Origin
 
-Basic Algorithms as I go implementing them in C
+Basic Algorithms implemented in C
